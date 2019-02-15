@@ -37,7 +37,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return new MaterialApp(
       // App名字
-      title: 'EasyRefresh',
+      onGenerateTitle: (context) {
+        return Translations.of(context).text('appName');
+      },
       // App主题
       theme: new ThemeData(
         primarySwatch: Colors.orange,
