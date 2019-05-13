@@ -109,3 +109,17 @@
 
 ## V 1.2.4
 >Add: support for NestedScrollView [#7](https://github.com/xuelongqy/flutter_easyrefresh/issues/7),[#11](https://github.com/xuelongqy/flutter_easyrefresh/issues/11)  
+
+## V 1.2.5
+>Fix: CustomScrollView does not maintain semanticChildCount error [#24](https://github.com/xuelongqy/flutter_easyrefresh/issues/24),[#25](https://github.com/xuelongqy/flutter_easyrefresh/issues/25)  
+>Fix: CustomScrollView refresh or load causes emptyWidget to be added multiple times, thanks to hwh97 [#29](https://github.com/xuelongqy/flutter_easyrefresh/pull/29)  
+
+## V 1.2.6
+>Fix: NotificationListener is invalid [#30](https://github.com/xuelongqy/flutter_easyrefresh/issues/30)  
+>Remove: A certain height is reached to trigger a refresh or load   
+>Fix: Unable to modify prompt text after refresh or loading [#22](https://github.com/xuelongqy/flutter_easyrefresh/issues/22)   
+
+## V 1.2.7
+>Add: builder property to add additional components, such as scroll bars [#39](https://github.com/xuelongqy/flutter_easyrefresh/issues/39)  
+>Add: Scrollbar example  
+>Add: Taobao second floor example [#26](https://github.com/xuelongqy/flutter_easyrefresh/issues/26)   

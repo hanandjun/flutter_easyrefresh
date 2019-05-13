@@ -109,3 +109,17 @@
 
 ## V 1.2.4
 >添加：NestedScrollView支持 [#7](https://github.com/xuelongqy/flutter_easyrefresh/issues/7),[#11](https://github.com/xuelongqy/flutter_easyrefresh/issues/11)  
+
+## V 1.2.5
+>修复：CustomScrollView不维护semanticChildCount报错问题 [#24](https://github.com/xuelongqy/flutter_easyrefresh/issues/24),[#25](https://github.com/xuelongqy/flutter_easyrefresh/issues/25)  
+>修复：CustomScrollView刷新或加载导致emptyWidget多次添加问题,感谢hwh97 [#29](https://github.com/xuelongqy/flutter_easyrefresh/pull/29)  
+
+## V 1.2.6
+>修复：NotificationListener无效问题 [#30](https://github.com/xuelongqy/flutter_easyrefresh/issues/30)  
+>去除：到达一定高度触发刷新或加载   
+>修复：刷新或加载结束后无法修改提示文字 [#22](https://github.com/xuelongqy/flutter_easyrefresh/issues/22)   
+
+## V 1.2.7
+>添加：builder属性，用于添加额外组件，例如滚动条 [#39](https://github.com/xuelongqy/flutter_easyrefresh/issues/39)  
+>添加：滚动条示例   
+>添加：淘宝二楼示例 [#26](https://github.com/xuelongqy/flutter_easyrefresh/issues/26)   

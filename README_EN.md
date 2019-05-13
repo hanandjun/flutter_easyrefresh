@@ -2,11 +2,13 @@
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](/LICENSE)
 [![Awesome Flutter](https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square)](https://stackoverflow.com/questions/tagged/flutter?sort=votes)
-[![Pub](https://img.shields.io/badge/pub-v1.2.4-orange.svg)](https://pub.dartlang.org/packages/flutter_easyrefresh)
+[![Pub](https://img.shields.io/badge/pub-v1.2.7-orange.svg)](https://pub.dartlang.org/packages/flutter_easyrefresh)
 
 ## English | [中文](https://github.com/xuelongqy/flutter_easyrefresh/blob/master/README.md)
 
 Just like the name, EasyRefresh can easily implement pull-down refresh and upload operations on Flutter applications. It supports almost all Flutter controls, but only if they are wrapped in ScrollView. Its functions are similar to Android's Smart Refresh Layout, and it also draws on the advantages of many tripartite libraries. EasyRefresh integrates various styles of Headers and Footers, but it has no limitations. You can easily customize it. Using Flutter's powerful animation, even a simple control can be done. EasyRefresh aims to build a strong, stable and mature drop-down refresh framework for Flutter.
+
+Web version: [vue-easyrefresh](https://github.com/xuelongqy/vue-easyrefresh)
 
 ## Features:
 
@@ -78,7 +80,7 @@ Just like the name, EasyRefresh can easily implement pull-down refresh and uploa
 ```
 //pub
 dependencies:
-  flutter_easyrefresh: ^1.2.4
+  flutter_easyrefresh: ^1.2.7
 
 //import
 dependencies:
@@ -137,7 +139,7 @@ You can also scan the qr code below or [![Donate to this project using Paypal](h
 ![](https://raw.githubusercontent.com/xuelongqy/donation/master/pay_alipay.jpg?raw=true) ![](https://raw.githubusercontent.com/xuelongqy/donation/master/pay_wxpay.jpg?raw=true) ![](https://raw.githubusercontent.com/xuelongqy/donation/master/pay_tencent.jpg?raw=true)
 
 If in donation message note name, will be record to the list if you are making open source authors, donation can leave when making project address or personal home page, a link will be added to the list have the effect of promoting each other
-[Donation list](https://github.com/xuelongqy/donation/blob/master/flutter_easyrefresh.md)
+[Donation list](https://github.com/xuelongqy/donation/blob/master/DONATIONLIST.md)
 
 ### QQ Group - 554981921
 #### Into the group of instructions

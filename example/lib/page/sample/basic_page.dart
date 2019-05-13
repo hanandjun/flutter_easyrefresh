@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:example/generated/translations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
@@ -74,7 +76,7 @@ class _BasicPageState extends State<BasicPage> {
             setState(() {
               str.clear();
               str.addAll(addStr);
-              _easyRefreshKey.currentState.waitState((){
+              _easyRefreshKey.currentState.waitState(() {
                 setState(() {
                   _loadMore = true;
                 });
@@ -82,21 +84,23 @@ class _BasicPageState extends State<BasicPage> {
             });
           });
         },
-        loadMore: _loadMore ? () async {
-          await new Future.delayed(const Duration(seconds: 1), () {
-            if (str.length < 20) {
-              setState(() {
-                str.addAll(addStr);
-              });
-            }else {
-              _easyRefreshKey.currentState.waitState((){
-                setState(() {
-                  _loadMore = false;
+        loadMore: _loadMore
+            ? () async {
+                await new Future.delayed(const Duration(seconds: 1), () {
+                  if (str.length < 20) {
+                    setState(() {
+                      str.addAll(addStr);
+                    });
+                  } else {
+                    _easyRefreshKey.currentState.waitState(() {
+                      setState(() {
+                        _loadMore = false;
+                      });
+                    });
+                  }
                 });
-              });
-            }
-          });
-        }: null,
+              }
+            : null,
       )),
       persistentFooterButtons: <Widget>[
         FlatButton(

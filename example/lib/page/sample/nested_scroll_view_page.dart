@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:example/generated/translations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
@@ -9,27 +11,69 @@ class NestedScrollViewPage extends StatefulWidget {
 }
 
 class _NestedScrollViewPageState extends State<NestedScrollViewPage>
-    with SingleTickerProviderStateMixin{
+    with SingleTickerProviderStateMixin {
   List<String> addStrList = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
   List<String> strList = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
-  List<String> addStrGrid = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
-  List<String> strGrid = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+  List<String> addStrGrid = [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ];
+  List<String> strGrid = [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ];
   GlobalKey<RefreshHeaderState> _headerKeyList =
-  new GlobalKey<RefreshHeaderState>();
+      new GlobalKey<RefreshHeaderState>();
   GlobalKey<RefreshHeaderState> _connectorHeaderKeyList =
-  new GlobalKey<RefreshHeaderState>();
+      new GlobalKey<RefreshHeaderState>();
   GlobalKey<RefreshFooterState> _footerKeyList =
-  new GlobalKey<RefreshFooterState>();
+      new GlobalKey<RefreshFooterState>();
   GlobalKey<RefreshFooterState> _connectorFooterKeyList =
-  new GlobalKey<RefreshFooterState>();
+      new GlobalKey<RefreshFooterState>();
   GlobalKey<RefreshHeaderState> _headerKeyGrid =
-  new GlobalKey<RefreshHeaderState>();
+      new GlobalKey<RefreshHeaderState>();
   GlobalKey<RefreshHeaderState> _connectorHeaderKeyGrid =
-  new GlobalKey<RefreshHeaderState>();
+      new GlobalKey<RefreshHeaderState>();
   GlobalKey<RefreshFooterState> _footerKeyGrid =
-  new GlobalKey<RefreshFooterState>();
+      new GlobalKey<RefreshFooterState>();
   GlobalKey<RefreshFooterState> _connectorFooterKeyGrid =
-  new GlobalKey<RefreshFooterState>();
+      new GlobalKey<RefreshFooterState>();
   ScrollController _controller;
   TabController _tabController;
 
@@ -128,8 +172,10 @@ class _NestedScrollViewPageState extends State<NestedScrollViewPage>
           children: <Widget>[
             new EasyRefresh(
               outerController: _controller,
-              refreshHeader: ConnectorHeader(key: _connectorHeaderKeyList, header: headerList),
-              refreshFooter: ConnectorFooter(key: _connectorFooterKeyList, footer: footerList),
+              refreshHeader: ConnectorHeader(
+                  key: _connectorHeaderKeyList, header: headerList),
+              refreshFooter: ConnectorFooter(
+                  key: _connectorFooterKeyList, footer: footerList),
               child: CustomScrollView(
                 semanticChildCount: strList.length,
                 slivers: <Widget>[
@@ -138,20 +184,20 @@ class _NestedScrollViewPageState extends State<NestedScrollViewPage>
                   ),
                   SliverList(
                       delegate: SliverChildBuilderDelegate(
-                            (context, index) {
-                          return new Container(
-                              height: 70.0,
-                              child: Card(
-                                child: new Center(
-                                  child: new Text(
-                                    strList[index],
-                                    style: new TextStyle(fontSize: 18.0),
-                                  ),
-                                ),
-                              ));
-                        },
-                        childCount: strList.length,
-                      )),
+                    (context, index) {
+                      return new Container(
+                          height: 70.0,
+                          child: Card(
+                            child: new Center(
+                              child: new Text(
+                                strList[index],
+                                style: new TextStyle(fontSize: 18.0),
+                              ),
+                            ),
+                          ));
+                    },
+                    childCount: strList.length,
+                  )),
                   SliverList(
                     delegate: SliverChildListDelegate(<Widget>[footerList]),
                   )
@@ -177,8 +223,10 @@ class _NestedScrollViewPageState extends State<NestedScrollViewPage>
             ),
             new EasyRefresh(
               outerController: _controller,
-              refreshHeader: ConnectorHeader(key: _connectorHeaderKeyGrid, header: headerGrid),
-              refreshFooter: ConnectorFooter(key: _connectorFooterKeyGrid, footer: footerGrid),
+              refreshHeader: ConnectorHeader(
+                  key: _connectorHeaderKeyGrid, header: headerGrid),
+              refreshFooter: ConnectorFooter(
+                  key: _connectorFooterKeyGrid, footer: footerGrid),
               child: CustomScrollView(
                 semanticChildCount: strGrid.length,
                 slivers: <Widget>[
@@ -186,25 +234,23 @@ class _NestedScrollViewPageState extends State<NestedScrollViewPage>
                     delegate: SliverChildListDelegate(<Widget>[headerGrid]),
                   ),
                   SliverGrid(
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 3
-                    ),
-                    delegate: SliverChildBuilderDelegate(
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 3),
+                      delegate: SliverChildBuilderDelegate(
                         (context, index) {
-                      return new Container(
-                          height: 100.0,
-                          child: Card(
-                            child: new Center(
-                              child: new Text(
-                                strGrid[index],
-                                style: new TextStyle(fontSize: 18.0),
-                              ),
-                            ),
-                          ));
-                      },
-                      childCount: strGrid.length,
-                    )
-                  ),
+                          return new Container(
+                              height: 100.0,
+                              child: Card(
+                                child: new Center(
+                                  child: new Text(
+                                    strGrid[index],
+                                    style: new TextStyle(fontSize: 18.0),
+                                  ),
+                                ),
+                              ));
+                        },
+                        childCount: strGrid.length,
+                      )),
                   SliverList(
                     delegate: SliverChildListDelegate(<Widget>[footerGrid]),
                   )

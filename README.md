@@ -2,11 +2,13 @@
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](/LICENSE)
 [![Awesome Flutter](https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square)](https://stackoverflow.com/questions/tagged/flutter?sort=votes)
-[![Pub](https://img.shields.io/badge/pub-v1.2.4-orange.svg)](https://pub.dartlang.org/packages/flutter_easyrefresh)
+[![Pub](https://img.shields.io/badge/pub-v1.2.7-orange.svg)](https://pub.dartlang.org/packages/flutter_easyrefresh)
 
 ## [English](https://github.com/xuelongqy/flutter_easyrefresh/blob/master/README_EN.md) | 中文
 
 正如名字一样，EasyRefresh很容易就能在Flutter应用上实现下拉刷新以及上拉加载操作，它支持几乎所有的Flutter控件，但前提是需要包裹成ScrollView。它的功能与Android的SmartRefreshLayout很相似，同样也吸取了很多三方库的优点。EasyRefresh中集成了多种风格的Header和Footer，但是它并没有局限性，你可以很轻松的自定义。使用Flutter强大的动画，甚至随便一个简单的控件也可以完成。EasyRefresh的目标是为Flutter打造一个强大，稳定，成熟的下拉刷新框架。
+
+Web版本移步：[vue-easyrefresh](https://github.com/xuelongqy/vue-easyrefresh)
 
 ## 特点功能:
 
@@ -17,7 +19,7 @@
  - 支持 Header 和 Footer 列表嵌入以及视图浮动两种形式
  - 支持列表事件监听，制作任何样子的 Header 和 Footer，并且能够放在任何位置
  - 支持首次刷新，并自定义视图
- - 支持自定义列表为空时的视图,仅限于ScrollView
+ - 支持自定义列表为空时的视图，仅限于ScrollView
  
 ## 传送门
 
@@ -78,7 +80,7 @@
 ```
 //pub方式
 dependencies:
-  flutter_easyrefresh: ^1.2.4
+  flutter_easyrefresh: ^1.2.7
 
 //导入方式
 dependencies:
@@ -137,7 +139,7 @@ import 'package:flutter_easyrefresh/easy_refresh.dart';
 ![](https://raw.githubusercontent.com/xuelongqy/donation/master/pay_alipay.jpg?raw=true) ![](https://raw.githubusercontent.com/xuelongqy/donation/master/pay_wxpay.jpg?raw=true) ![](https://raw.githubusercontent.com/xuelongqy/donation/master/pay_tencent.jpg?raw=true)
 
 如果在捐赠留言中备注名称，将会被记录到列表中~ 如果你也是github开源作者，捐赠时可以留下github项目地址或者个人主页地址，链接将会被添加到列表中起到互相推广的作用  
-[捐赠列表](https://github.com/xuelongqy/donation/blob/master/flutter_easyrefresh.md)
+[捐赠列表](https://github.com/xuelongqy/donation/blob/master/DONATIONLIST.md)
 
 ### QQ讨论群 - 554981921
 #### 进群须知
