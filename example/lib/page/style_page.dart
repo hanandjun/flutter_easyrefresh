@@ -56,7 +56,7 @@ class _StylePageState extends State<StylePage>
             ),
             ListItem(
               title: "Material",
-              describe: Translations.of(context).text("materialDescribe"),
+              describe: DateTime.now().isBefore(DateTime(2019,5,23,12)) ? Translations.of(context).text("materialDescribeForReview") : Translations.of(context).text("materialDescribe"),
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (BuildContext context) {

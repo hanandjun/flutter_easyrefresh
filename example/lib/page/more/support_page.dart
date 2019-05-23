@@ -47,24 +47,24 @@ class _SupportPageState extends State<SupportPage> {
                 launch("https://github.com/xuelongqy/flutter_easyrefresh");
               },
             ),
-            Container(
-              width: double.infinity,
-              height: 0.5,
-              padding: EdgeInsets.only(left: 5.0, right: 5.0),
-              child: Container(
-                color: Colors.black12,
-              ),
-            ),
-            ListItem(
-              title: Translations.of(context).text("aliPay"),
-              icon: ImageIcon(
-                AssetImage("assets/image/alipay.png"),
-                color: Colors.orange,
-              ),
-              onPressed: () {
-                _nativeChannel.invokeMethod(_alipayDonation);
-              },
-            ),
+//            Container(
+//              width: double.infinity,
+//              height: 0.5,
+//              padding: EdgeInsets.only(left: 5.0, right: 5.0),
+//              child: Container(
+//                color: Colors.black12,
+//              ),
+//            ),
+//            ListItem(
+//              title: Translations.of(context).text("aliPay"),
+//              icon: ImageIcon(
+//                AssetImage("assets/image/alipay.png"),
+//                color: Colors.orange,
+//              ),
+//              onPressed: () {
+//                _nativeChannel.invokeMethod(_alipayDonation);
+//              },
+//            ),
 //            Container(
 //              width: double.infinity,
 //              height: 0.5,
@@ -93,25 +93,25 @@ class _SupportPageState extends State<SupportPage> {
 //                color: Colors.orange,
 //              ),
 //            ),
-            Container(
-              width: double.infinity,
-              height: 0.5,
-              padding: EdgeInsets.only(left: 5.0, right: 5.0),
-              child: Container(
-                color: Colors.black12,
-              ),
-            ),
-            ListItem(
-              title: Translations.of(context).text("payPal"),
-              icon: ImageIcon(
-                AssetImage("assets/image/paypal.png"),
-                color: Colors.orange,
-              ),
-              onPressed: () {
-                launch(
-                    "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=334PPRBZTY3J8&source=url");
-              },
-            ),
+//            Container(
+//              width: double.infinity,
+//              height: 0.5,
+//              padding: EdgeInsets.only(left: 5.0, right: 5.0),
+//              child: Container(
+//                color: Colors.black12,
+//              ),
+//            ),
+//            ListItem(
+//              title: Translations.of(context).text("payPal"),
+//              icon: ImageIcon(
+//                AssetImage("assets/image/paypal.png"),
+//                color: Colors.orange,
+//              ),
+//              onPressed: () {
+//                launch(
+//                    "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=334PPRBZTY3J8&source=url");
+//              },
+//            ),
           ],
         ),
       ),

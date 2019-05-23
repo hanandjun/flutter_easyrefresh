@@ -54,6 +54,7 @@
   "email": "邮箱",
   "classicDescribe": "经典(默认)风格",
   "materialDescribe": "质感设计,Android样式",
+  "materialDescribeForReview": "Material 风格",
   "ballPulseDescribe": "球脉冲样式",
   "bezierCircleDescribe": "弹出圆圈",
   "bezierHourGlassDescribe": "弹出HourGlass",

@@ -54,6 +54,7 @@
   "email": "E-Mail",
   "classicDescribe": "Classic and default",
   "materialDescribe": "Material design, Android style",
+  "materialDescribeForReview": "Material design",
   "ballPulseDescribe": "Ball pulse style",
   "bezierCircleDescribe": "Popup circle style",
   "bezierHourGlassDescribe": "Popup HourGlass style",
